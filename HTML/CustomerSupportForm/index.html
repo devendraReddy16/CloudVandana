@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>Customer Survey Form</header>
+  <body>
+    <div class="container">
+      <form id="survey-form" onsubmit="submitForm(); return false;">
+        <table>
+          <tr>
+            <td>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </td>
+            <td>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <label for="q1"
+                >Is This first time You are using our products &
+                services?</label
+              >
+              <input type="radio" id="q1-yes" name="q1" value="Yes" />
+              <label for="q1-yes">Yes</label>
+              <input type="radio" id="q1-no" name="q1" value="No" />
+              <label for="q1-no">No</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <label for="q2"
+                >Would you suggest to your friends and colleague?</label
+              >
+              <input type="radio" id="q2-yes" name="q2" value="Yes" />
+              <label for="q2-yes">Yes</label>
+              <input type="radio" id="q2-no" name="q2" value="No" />
+              <label for="q2-no">No</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <label for="q3"
+                >How satisfied are you with our company overall?</label
+              >
+              <input
+                type="radio"
+                id="q3-satisfied"
+                name="q3"
+                value="Satisfied"
+              />
+              <label for="q3-satisfied">Satisfied</label>
+              <input
+                type="radio"
+                id="q3-undecided"
+                name="q3"
+                value="Undecided"
+              />
+              <label for="q3-undecided">Undecided</label>
+              <input
+                type="radio"
+                id="q3-unsatisfied"
+                name="q3"
+                value="Unsatisfied"
+              />
+              <label for="q3-unsatisfied">Unsatisfied</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <label for="q4"
+                >Do you have suggestions to improve our services?</label
+              >
+              <textarea
+                id="additional-comments"
+                name="additional-comments"
+                rows="4"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popup-message" class="popup-message"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  <div class="copyright-text">
+    &copy; 2023 Customer Survey Form. All rights reserved.| Designed by
+    <span class="designer"> M.Devendra Reddy</span>.
+  </div>
+</html>
