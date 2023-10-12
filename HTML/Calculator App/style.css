@@ -1,0 +1,94 @@
+.container {
+  border: 1px solid #cccccc;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 312px;
+  height: 448px;
+}
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+td {
+  padding: 0;
+}
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 0;
+
+  padding: 10px;
+
+  margin: auto;
+}
+
+.button {
+  height: 80px;
+
+  padding: 5px;
+
+  background-color: #000000;
+
+  border: none;
+
+  font-size: 2rem;
+
+  color: #fff;
+
+  margin: 0;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #eaeaea;
+}
+
+.operator {
+  color: #fff;
+  border-width: 0px;
+  background-color: #a5aaa3;
+}
+
+.clear {
+  background-color: #54e4a0;
+  height: 100%;
+  border: none;
+  width: 200%;
+  padding: 87%;
+  padding-left: 105%;
+  padding-right: 288%;
+  text-align: center;
+  color: #fff;
+  margin-left: -349%;
+  margin-top: 116%;
+  margin-bottom: -80%;
+}
+
+.equal-sign {
+  background-color: #000000;
+
+  color: #ffffff;
+  border: none;
+}
+
+.screen {
+  justify-content: left;
+  padding-top: 10%;
+  color: black;
+
+  font-size: x-large;
+
+  width: 79%;
+  padding-left: 10%;
+  height: 21px;
+  border: none;
+  cursor: default;
+
+  text-align: left;
+}
